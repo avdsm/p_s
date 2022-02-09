@@ -14,10 +14,14 @@ text_elem = driver.find_element_by_name("quantity")
 text_elem.clear()
 text_elem.send_keys("22")
 
+btn_qooci = driver.find_element(By.ID, "oct-policy-btn")
+btn_qooci.click()
+
+driver.implicitly_wait(2)
 btn_add = driver.find_element_by_css_selector("a#button-cart")
 btn_add.click()
 
-driver.implicitly_wait(5)
+driver.implicitly_wait(3)
 AAA = driver.find_element_by_css_selector("button#cls")
 AAA.click()
 

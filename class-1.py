@@ -13,5 +13,8 @@
 # d = a + b
 # print(int(d) + c)
 
-c = 3.14568
-print(round(c, 2))
+# c = 3.14568
+# print(round(c, 2))
+
+name = input("Please enter you name: ")
+print("hello " + name)
