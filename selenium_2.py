@@ -9,12 +9,12 @@ try:
     browser.get(link)
 
     # Ваш код, который заполняет обязательные поля
-    first_name = browser.find_element(By.CSS_SELECTOR, "input.form-control.first")
-    first_name.clear()
+    first_name = browser.find_element(By.CSS_SELECTOR, "div.first_block input.form-control.first")
+    #first_name.clear()
     first_name.send_keys('UserName')
 
-    first_name_second = browser.find_element(By.CSS_SELECTOR, "input.form-control.second")
-    first_name_second.clear()
+    first_name_second = browser.find_element(By.CSS_SELECTOR, "div.first_block input.form-control.second")
+    #first_name_second.clear()
     first_name_second.send_keys('UserNameSecond')
 
     email_name = browser.find_element(By.CSS_SELECTOR, "input.form-control.third")
@@ -22,14 +22,14 @@ try:
     email_name.send_keys('UserNameSecond@mail.ru')
 
     # Отправляем заполненную форму
-    time.sleep(3)
+    time.sleep(1)
     button = browser.find_element(By.CSS_SELECTOR, "button.btn.btn-default")
     button.click()
 
     # Проверяем, что смогли зарегистрироваться
     # ждем загрузки страницы
     #browser.implicitly_wait(3)
-    #time.sleep(3)
+    time.sleep(3)
 
     # находим элемент, содержащий текст
     welcome_text_elt = browser.find_element(By.CSS_SELECTOR, "h1")
