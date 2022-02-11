@@ -10,11 +10,11 @@ try:
 
     # Ваш код, который заполняет обязательные поля
     first_name = browser.find_element(By.CSS_SELECTOR, "div.first_block input.form-control.first")
-    #first_name.clear()
+    first_name.clear()
     first_name.send_keys('UserName')
 
     first_name_second = browser.find_element(By.CSS_SELECTOR, "div.first_block input.form-control.second")
-    #first_name_second.clear()
+    first_name_second.clear()
     first_name_second.send_keys('UserNameSecond')
 
     email_name = browser.find_element(By.CSS_SELECTOR, "input.form-control.third")
