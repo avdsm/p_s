@@ -1,5 +1,5 @@
 3-rd
-01.37.00
+02.13.00
 ////////// Выбор селектора по атрибуту value
 <input type="radio" name="language" value="python" checked>
 <input type="radio" name="language" value="selenium">
