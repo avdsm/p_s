@@ -1,6 +1,6 @@
 # Boolean (Bool)
-a = True
-b = False
+# a = True
+# b = False
 
 'a'.islower()  # True
 'A'.islower()  # False
@@ -24,7 +24,7 @@ b = False
 ' '.isspace()  #  # True  / Должен быть только пробел
 'tgtg 12'.isspace()  #  # False
 # ##############
-age = input()
+age = input("Please enter data: ")
 if age.isnumeric():
     print("Ok, accepted " + age)
     age = int(age)
@@ -37,4 +37,4 @@ if age.isnumeric():
 else:
     print('You are entered incorrect age')
 
-if not age > 18:  # # Истина если age меньше 18, и ложь, если больше
+#if not age > 18:  # # Истина если age меньше 18, и ложь, если больше
