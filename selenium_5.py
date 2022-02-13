@@ -20,7 +20,7 @@ try:
 
     select_s = Select(browser.find_element(By.TAG_NAME, "select"))
     select_s.select_by_value(f'{suma}').click()
-
+    # ####################
     # browser.find_element(By.TAG_NAME, "select").click()
     #  browser.find_element(By.CSS_SELECTOR, "[value={suma}]").click()
     # browser.find_element(By.CSS_SELECTOR, "option:nth-child(2)").click()
