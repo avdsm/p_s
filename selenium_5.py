@@ -19,7 +19,9 @@ try:
     print(f'Сумма чисел на странице равно --- {suma}')
 
     select_s = Select(browser.find_element(By.TAG_NAME, "select"))
-    select_s.select_by_value(f'{suma}').click()
+    # select_s.select_by_value(f'{suma}')
+    select_s.select_by_visible_text(f'{suma}')
+
     # ####################
     # browser.find_element(By.TAG_NAME, "select").click()
     #  browser.find_element(By.CSS_SELECTOR, "[value={suma}]").click()
