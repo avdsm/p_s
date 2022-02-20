@@ -25,19 +25,22 @@
 # del a[-1] # удалить последнее значение
 # print(a)
 # ---------------
-a = [27, 1, 5, 16, 2, 14, 3, 5, 4, 5]
-print(a)
-b = sorted(a) # значение а не меняется
-print(b)
-d = sorted(a, reverse=True)
-print(d)
-print(a)
-a.sort() # значение а меняется
-print(a)
+# a = [27, 1, 5, 16, 2, 14, 3, 5, 4, 5]
+# print(a)
+# b = sorted(a) # значение а не меняется
+# print(b)
+# d = sorted(a, reverse=True)
+# print(d)
+# print(a)
+# a.sort() # значение а меняется
+# print(a)
 # ###############
 # for i in range(len(a)):
 #     print(a[i])
 
-for i in a:   # На месте i поочередно использует значения а
-    print(i)
+# for i in a:   # На месте i поочередно использует значения а
+#     print(i)
+
+squares = [x**2 for x in range(1, 11)]
+print(squares)
 
