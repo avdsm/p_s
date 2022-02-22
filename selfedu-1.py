@@ -34,14 +34,22 @@ start = -1
 count = 0
 
 while True:
-    start = my_string.find(sup_st, start+len(sup_st)+1)
+    if count == 0:
+        start = my_string.find(sup_st, start+1)
+    elif count > 0:
+        start = my_string.find(sup_st, start + len(sup_st))
+    else:
+        print('Ошибка!')
     if start == -1:
         if count == 0:
             print('Совпадение не найдено!')
         break
     count += 1
+
 rezult_slovo = my_string.replace(sup_st, '')
 print(f"Количество вхождений символа '{sup_st}' в строку: ", count)
 if count != 0:
     print(f'Строка после удаления символов "{sup_st}" получится таким - "{rezult_slovo}"')
+
+
 

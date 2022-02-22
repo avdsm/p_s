@@ -17,8 +17,11 @@ try:
     x = int(x_text)
     y = calc(x)
 
+    button = browser.find_element(By.TAG_NAME, "button")
+    browser.execute_script("return arguments[0].scrollIntoView(true);", button)
+
     answer = browser.find_element(By.CSS_SELECTOR, "input#answer")
-    browser.execute_script("return arguments[0].scrollIntoView(true);", answer)
+    # browser.execute_script("return arguments[0].scrollIntoView(true);", answer)
     answer.send_keys(y)
 
     cb_robot = browser.find_element(By.ID, "robotCheckbox")
@@ -27,8 +30,6 @@ try:
     radio_rule = browser.find_element(By.CSS_SELECTOR, "label[for='robotsRule']")
     radio_rule.click()
 
-    button = browser.find_element(By.TAG_NAME, "button")
-    browser.execute_script("return arguments[0].scrollIntoView(true);", button)
     button.click()
 
 finally:
