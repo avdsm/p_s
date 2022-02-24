@@ -1,0 +1,21 @@
+# 2.4 Настройка ожиданий
+#  https://stepik.org/lesson/181384/step/3?unit=156009
+
+from selenium import webdriver
+import time
+from selenium.webdriver.common.by import By
+
+browser = webdriver.Chrome()
+browser.implicitly_wait(5)
+browser.get("http://suninjuly.github.io/wait1.html")
+
+button = browser.find_element(By.ID, "verify")
+button.click()
+message = browser.find_element(By.ID, "verify_message")
+print(message.text)
+
+assert "successful" in message.text
+
+time.sleep(3)
+browser.close()
+browser.quit()
